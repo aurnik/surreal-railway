@@ -11,6 +11,8 @@ ENV USER=$USER
 ENV PASS=$PASS
 ENV PORT=$PORT
 
+EXPOSE 8080
+
 COPY start.sh .
 COPY --from=binary /surreal /bin
 
